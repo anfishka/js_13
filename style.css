@@ -36,16 +36,18 @@ background:#1c1b2c;
     height: 100%;
 }
 .card-img-overlay{
-   width: auto;
-   height: auto;
+width: 800px;
+height: 650px;
 }
+
 
 .card{
     color: aliceblue;
     background:#1c1b2c;
+    /*
     max-width: 100%;
     height: auto;
-    
+    */
 
 }
 .top_container{
@@ -63,8 +65,9 @@ background:#1c1b2c;
 
 .bottom_container {
     position: absolute;
-    bottom: 0px;
-    padding: 20px;
+    bottom: 80px;
+    padding-left: 20px;
+   
 }
 
 .vin,.plate,.year,.region,.operations{

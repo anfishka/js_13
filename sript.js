@@ -92,7 +92,7 @@ btn_search_box.addEventListener('click', e =>
    e.preventDefault();
     let inputValue = input_search_box.value.trim();
 
-    if (inputValue !== '') { // Проверка на непустое значение
+    if (inputValue !== '') { 
         if (inputValue.length === 17) {
             fetchVinCode(inputValue);
         } else if (inputValue.length >= 6 && inputValue.length <= 8) {
@@ -105,7 +105,7 @@ btn_search_box.addEventListener('click', e =>
     }
 });
 
-// Функция для вывода ошибки на экран
+
 function displayError(errorMessage) {
     let errorBox = document.getElementById('errorBox');
     if (!errorBox) {
@@ -173,7 +173,7 @@ fetchModelCar()
 
   function displayCarInfo(data) {
             const carInfoDiv = document.getElementsByClassName('main')[0];
-            carInfoDiv.innerHTML = ''; // Очищаем предыдущее содержимое
+            carInfoDiv.innerHTML = ''; 
 
       const card_container = document.createElement('div');
        card_container.classList.add('card_container_main');
@@ -234,13 +234,6 @@ fetchModelCar()
                  operations.classList.add('operations');
                 operations.appendChild(li);
             });
-
-           // card.appendChild(img);
-      //   card.appendChild(title);
-      
-      
-            
-      
         
       overlay.appendChild(top_container);
        overlay.appendChild(bottom_container);
@@ -257,14 +250,5 @@ fetchModelCar()
             
       card_container.appendChild(card)
     carInfoDiv.appendChild(card_container)
-
-      
-
-
-     
-
-   
-
-
 
         }
